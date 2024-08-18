@@ -43,7 +43,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: groups
+  owner: guests
   system: provisioning
   definition:
     $text: ./petstore.oas.yaml
