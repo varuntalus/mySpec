@@ -10,6 +10,18 @@ spec:
   lifecycle: unknown
   owner: guests
 
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: provisioning-system
+  description: A system that handles all provisioning-related services and components.
+  labels:
+    team: provisioning-team
+spec:
+  owner: team-provisioning
+  domain: provisioning
 
 ---
 
