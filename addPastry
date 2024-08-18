@@ -1,7 +1,7 @@
 ---
 openapi: 3.0.2
 servers:
-  - url: http://10.167.166.161:80**/rest
+  - url: http://10.167.166.161:8085/rest
 info:
   title: API Pastry - 2.0
   version: 2.0.0
