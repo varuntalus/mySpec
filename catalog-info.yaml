@@ -1,13 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Domain
 metadata:
-  name: mySpec
-  annotations:
-    github.com/project-slug: varuntalus/mySpec
-    backstage.io/techdocs-ref: url:https://github.com/varuntalus/mySpec/blob/main/README.md
+  name: provisioning
+  description: Domain responsible for all payment-related systems and APIs.
 spec:
-  type: other
-  lifecycle: experimental
   owner: guests
 
 ---
@@ -23,14 +19,19 @@ spec:
   owner: guests
   domain: provisioning
 
+
 ---
 
 apiVersion: backstage.io/v1alpha1
-kind: Domain
+kind: Component
 metadata:
-  name: provisioning
-  description: Domain responsible for all payment-related systems and APIs.
+  name: mySpec
+  annotations:
+    github.com/project-slug: varuntalus/mySpec
+    backstage.io/techdocs-ref: url:https://github.com/varuntalus/mySpec/blob/main/README.md
 spec:
+  type: other
+  lifecycle: experimental
   owner: guests
 
 ---
