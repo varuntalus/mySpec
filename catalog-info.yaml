@@ -26,6 +26,16 @@ spec:
 ---
 
 apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: provisioning
+  description: Domain responsible for all payment-related systems and APIs.
+spec:
+  owner: guests
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: my-petstore
