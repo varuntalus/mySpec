@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: addPastry
+  description: The Pastry API
+  tags:
+    - store
+    - rest
+  links:
+    - url: https://github.com/varuntalus/mySpec
+      title: GitHub Repo
+      icon: github
+    - url: https://github.com/varuntalus/mySpec/addPastryAPIs.yaml
+      title: API Spec
+      icon: code
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: groups
+  definition:
+    $text: ./addPastry.yaml
