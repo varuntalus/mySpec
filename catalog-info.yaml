@@ -32,5 +32,6 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: groups
+  system: Provisioning
   definition:
     $text: ./petstore.oas.yaml
