@@ -36,9 +36,7 @@ spec:
   lifecycle: experimental
   owner: guests
   providesApis:
-    - petstore
-    - internal/streetlights
-    - hello-world  
+    - my-petstore  
 ---
 
 apiVersion: backstage.io/v1alpha1
