@@ -76,7 +76,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: orderStatusUpdate
-  description: The petstore API
+  description: To Update The Status of the Order
   tags:
     - store
     - rest
