@@ -20,6 +20,34 @@ spec:
   owner: guests
 #  domain: provisioning
 
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: provisioning
+  description: The provisioning business unit
+spec:
+  type: team
+  profile:
+    displayName: provisioning
+    email: provisioning@example.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+  parent: Group
+  children: [backstage, other]
+  members: [vartal]
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: vartal
+spec:
+  profile:
+    displayName: Varun T
+    email: vartal@example.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  memberOf: [team-provisioning]
 
 ---
 
