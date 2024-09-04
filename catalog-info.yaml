@@ -30,7 +30,7 @@ metadata:
   annotations:
     github.com/project-slug: varuntalus/mySpec
     backstage.io/techdocs-ref: url:https://github.com/varuntalus/mySpec/blob/main/README.md
-    jenkins.io/job-full-name: xyz
+    jenkins.io/job-full-name: xyz123
 spec:
   type: service
   lifecycle: experimental
