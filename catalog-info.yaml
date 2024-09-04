@@ -52,10 +52,10 @@ metadata:
     - store
     - rest
   links:
-    - url: https://github.com/swagger-api/swagger-petstore
+    - url: https://github.com/varuntalus/mySpec
       title: GitHub Repo
       icon: github
-    - url: https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+    - url: https://github.com/varuntalus/mySpec/blob/main/addPastry.yaml
       title: API Spec
       icon: code
 spec:
@@ -64,7 +64,7 @@ spec:
   owner: guests
   system: provisioning-system
   definition:
-    $text: ./petstore.oas.yaml
+    $text: ./addPastry.yaml
 
 ---
 
