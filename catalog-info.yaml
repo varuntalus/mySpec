@@ -132,7 +132,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: provisioning
+  owner: DRaaS
   system: DRaaS
   definition:
     $text: ./addPastry.yaml
