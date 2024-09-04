@@ -23,6 +23,18 @@ spec:
 ---
 
 apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: DRaaS
+  description: A system that handles all DR services and components.
+  labels:
+    team: DRaaS-team
+spec:
+  owner: guests
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: provisioning
@@ -38,6 +50,35 @@ spec:
   members: [vartal]
 ---
 
+# apiVersion: backstage.io/v1alpha1
+# kind: User
+# metadata:
+#   name: vartal
+# spec:
+#   profile:
+#     displayName: Varun T
+#     email: vartal@example.com
+#     picture: https://example.com/staff/jenny-with-party-hat.jpeg
+#   memberOf: [team-provisioning]
+
+# ---
+
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: DRaaS
+  description: The DR business unit
+spec:
+  type: team
+  profile:
+    displayName: team-draas
+    email: draas@example.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+  parent: Group
+  children: [backstage, other]
+  members: [vartal]
+---
+
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
@@ -47,7 +88,8 @@ spec:
     displayName: Varun T
     email: vartal@example.com
     picture: https://example.com/staff/jenny-with-party-hat.jpeg
-  memberOf: [team-provisioning]
+  memberOf: [team-provisioning, team-draas]
+
 
 ---
 
@@ -91,7 +133,7 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: provisioning
-  system: provisioning-system
+  system: DRaaS
   definition:
     $text: ./addPastry.yaml
 
