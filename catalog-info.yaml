@@ -36,7 +36,9 @@ spec:
   lifecycle: experimental
   owner: guests
   providesApis:
-    - my-petstore  
+    - my-petstore
+  consumesApis:
+    - my-petstore
 ---
 
 apiVersion: backstage.io/v1alpha1
