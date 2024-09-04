@@ -62,7 +62,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: team-provisioning
+  owner: provisioning
   system: provisioning-system  
   providesApis:
     - my-petstore
@@ -89,7 +89,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: team-provisioning
+  owner: provisioning
   system: provisioning-system
   definition:
     $text: ./addPastry.yaml
@@ -114,7 +114,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: team-provisioning
+  owner: provisioning
   system: provisioning-system
   definition:
     $text: ./petstore.oas.yaml
